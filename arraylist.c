@@ -51,7 +51,9 @@ void push(ArrayList * l, void * data, int i){
 }
 
 void* pop(ArrayList * l, int i){
+  printf("%d",i);
   void* aux=l->data[i];
+  
   if(l->size==0) return NULL;
   
   if(i>=0 && i<l->size-1){
@@ -60,8 +62,7 @@ void* pop(ArrayList * l, int i){
     }
   }
 
-  if(i<0 && -i<l->size-1){
-    
+  if(i<0 && -i<l->size-1){ 
     
   }
 

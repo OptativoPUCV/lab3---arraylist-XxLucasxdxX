@@ -68,7 +68,7 @@ void* pop(ArrayList * l, int i){
 
   if(i<0 && -i<l->size-1){ 
     
-    }
+    
   }
   l->size--;
   return aux;

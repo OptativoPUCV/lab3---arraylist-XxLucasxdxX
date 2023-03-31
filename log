@@ -99,3 +99,14 @@ Thu 30 Mar 2023 11:23:53 PM UTC:
  tests:  5|3
 total_score: 30/70
 b2d8b7d
+Fri 31 Mar 2023 12:37:46 AM UTC: 
+ arraylist.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:58:10: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   58 |   return i;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+7b53f06

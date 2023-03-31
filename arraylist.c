@@ -85,7 +85,7 @@ void clean(ArrayList * l){
   if(l->size==0) return;
   if(l->size>0)
   {
-    for(int i=0 ; i<l->size-1;i++){
+    for(int i=0 ; i<l->size;i++){
       pop(l, i);
     }
   }

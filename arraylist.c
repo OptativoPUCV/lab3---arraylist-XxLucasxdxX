@@ -95,4 +95,5 @@ void clean(ArrayList * l){
       pop(l, i);
     }
   }
+  l->size=0;
 }

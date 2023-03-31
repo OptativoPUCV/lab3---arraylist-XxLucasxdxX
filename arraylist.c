@@ -52,8 +52,7 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
   void* aux=l->data[i];
-  for(int k = i ; k>l->size;k++){
-    
+  for(int k = i ; k>l->size-1;k++){
     l->data[k]=l->data[k+1];
   }
   l->size--;

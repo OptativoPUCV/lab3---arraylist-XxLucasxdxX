@@ -359,3 +359,9 @@ arraylist.c:84:5: error: ‘get_size’ defined but not used [-Werror=unused-fun
 cc1: all warnings being treated as errors
 Compilation failed
 e8d0d3d
+Fri 31 Mar 2023 06:13:26 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  16|0
+total_score: 70/70
+e7510ee

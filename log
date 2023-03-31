@@ -238,3 +238,28 @@ Fri 31 Mar 2023 05:30:55 PM UTC:
  tests:  16|0
 total_score: 70/70
 3cb58cc
+Fri 31 Mar 2023 05:32:08 PM UTC: 
+ arraylist.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:55:9: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   55 |   void* aux=0;
+      |         ^~~
+arraylist.c: At top level:
+arraylist.c:73:4: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   73 |   l->size--;
+      |    ^~
+arraylist.c:74:3: error: expected identifier or ‘(’ before ‘return’
+   74 |   return aux;
+      |   ^~~~~~
+arraylist.c:75:1: error: expected identifier or ‘(’ before ‘}’ token
+   75 | }
+      | ^
+arraylist.c: In function ‘pop’:
+arraylist.c:72:3: error: control reaches end of non-void function [-Werror=return-type]
+   72 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+be528ea
